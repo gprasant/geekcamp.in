@@ -1,0 +1,20 @@
+﻿<div class="nine.columns.centered">
+    <p class="row">
+        <a href="#/create" class="small button radius">Register</a>
+    </p>
+    <div class="row">
+        <div class="three columns header">Name</div>
+        <div class="four columns header">Email Address</div>
+        <div class="two columns header">Phone</div>
+        <div class="two columns header">Organization</div>
+    </div>
+    
+    <div data-bind="foreach: contacts">
+        <div class="row">
+            <div class="three columns" data-bind="text: name"/>
+            <div class="four columns" data-bind="text: email"/>
+            <div class="two columns" data-bind="text: phone"/>
+            <div class="two columns" data-bind="text: organization"/>
+        </div>
+    </div>
+</div>
